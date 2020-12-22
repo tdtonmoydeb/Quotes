@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #ff335a;
+}
+
+.con {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    margin-bottom: 6rem;
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.quotes {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+    width: 30rem;
+    box-shadow: 1rem 1rem 2rem rgb(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.icn{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.7rem;
+    color: rgb(0,0,0,0.3);
+    cursor: copy;
+    transition: 0.5s;
+}
+
+.icn:hover{
+    color: #000;
+}
+
+.quoteTxt {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: Sans-Serif;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.quoteCredit {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadBtn {
+    font-size: 1.9rem;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.7rem 0.7rem 1rem rgb(0, 0, 0, 0.3);
+}
+
+.copied{
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    background: #ff335a;
+    color: #fff;
+    opacity: 1;
+    transition: 0.5s;
+    animation-delay: 0.1s;
+    animation: copied 0.5s;
+    pointer-events: none;
+}
+
+@keyframes copied{
+    to{
+        opacity: 0;
+    }
+}
